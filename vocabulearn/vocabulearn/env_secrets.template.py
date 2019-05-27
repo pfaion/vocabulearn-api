@@ -11,6 +11,6 @@ secrets = dict(
     DJANGO_DEBUG=1,
     # your database url (postgresql)
     DATABASE_URL='',
-    # localhost for local debugging, actual hostname otherwise
-    ALLOWED_HOSTS='localhost',
+    # leave empty for local debugging (when DJANGO_DEBUG=1), actual hostname otherwise
+    ALLOWED_HOSTS='',
 )
