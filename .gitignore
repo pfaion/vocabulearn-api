@@ -6,3 +6,6 @@ __pycache__/
 
 # file to store secret config information
 env_secrets.py
+
+# linter setup
+pylama.ini
