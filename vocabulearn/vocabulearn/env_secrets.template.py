@@ -7,10 +7,10 @@
 secrets = dict(
     # your django secret key
     SECRET_KEY='',
-    # you probably want that to be 1 for local debugging, 0 for actual production
-    DJANGO_DEBUG=1,
     # your database url (postgresql)
     DATABASE_URL='',
+    # you probably want that to be 1 for local debugging, 0 for actual production
+    DJANGO_DEBUG=1,
     # leave empty for local debugging (when DJANGO_DEBUG=1), actual hostname otherwise
     ALLOWED_HOSTS='',
 )
