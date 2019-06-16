@@ -33,6 +33,12 @@ if 'ALLOWED_HOSTS' in secrets:
     ALLOWED_HOSTS.append(secrets['ALLOWED_HOSTS'])
 
 
+# HTTPS
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
+    # for heroku
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 # Application definition
 
 INSTALLED_APPS = [
